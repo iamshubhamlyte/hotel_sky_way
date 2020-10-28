@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="-20dp"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".Viewssigntask">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/buttonbg"
+        android:backgroundTint="@android:color/white"
+        android:orientation="vertical"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/boundry"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/card_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:text="Staff ID"
+                android:maxLines="1"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/card_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:text="Staff Name"
+                android:maxLines="2"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/card_position"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:text="Task Assigned On"
+                android:maxLines="2"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/card_taskstatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:text="Task Status"
+                android:maxLines="2"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Swipe Left or Right To Change Status of Task"
+            android:id="@+id/hideformanager"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <TextView
+            android:id="@+id/hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="No Booking History To Display\n"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/showdata"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

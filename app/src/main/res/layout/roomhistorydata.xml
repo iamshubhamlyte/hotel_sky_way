@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_margin="4dp"
+    android:backgroundTint="#FDECB9"
+    android:elevation="8dp"
+    android:orientation="vertical"
+    app:cardElevation="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/card_roomNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:hint="Room No."
+            android:maxLines="1"
+            android:textAppearance="?android:textAppearanceSmall"
+
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/card_customername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:hint="Customer Name"
+            android:maxLines="2"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/card_dob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:hint="Booking Date"
+            android:maxLines="2"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/card_doci"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:hint="Check IN Date"
+            android:maxLines="2"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/card_doco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:hint="Check Out Date"
+            android:maxLines="2"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

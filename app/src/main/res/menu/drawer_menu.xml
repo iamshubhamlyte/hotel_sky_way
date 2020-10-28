@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_myProfile"
+            android:icon="@drawable/ic_person_pin_circle_black_24dp"
+            android:title="My Profile"/>
+        <item
+            android:id="@+id/nav_updateProfile"
+            android:icon="@drawable/ic_rate_review_black_24dp"
+            android:title="Update Profile"/>
+    </group>
+    <group android:checkableBehavior="single" >
+        <item
+            android:title="Room Booking History"
+            android:icon="@drawable/ic_history_black_24dp"
+            android:id="@+id/nav_RoomBookingHistory"/>
+        <item
+            android:title="Room Detail"
+            android:icon="@drawable/ic_check_box_black_24dp"
+            android:id="@+id/nav_RoomDetail"/>
+        <item
+            android:id="@+id/nav_AddStaff"
+            android:icon="@drawable/ic_person_add_black_24dp"
+            android:title="Add Staff"/>
+
+        <item
+            android:id="@+id/nav_AssignTask"
+            android:title="Assign Task To Staff"
+            android:icon="@drawable/ic_work_black_24dp"/>
+        <item
+            android:id="@+id/nav_ViewTask"
+            android:icon="@drawable/ic_event_busy_black_24dp"
+            android:title="View Assigned Task Status"/>
+
+
+    </group>
+
+
+    <group android:checkableBehavior="none">
+        <item
+            android:title="Hotel Resources"
+            android:icon="@drawable/ic_add_shopping_cart_black_24dp"
+            android:id="@+id/nav_Resources"/>
+        <item
+
+            android:title="Logout"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            android:id="@+id/nav_Logout"/>
+        <item
+            android:title="About App Creater"
+            android:icon="@drawable/ic_toys_black_24dp"
+            android:id="@+id/nav_aboutappcreator" />
+    </group>
+
+
+
+</menu>
+
+
+
+
+

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="20dp"
+    android:orientation="vertical"
+    android:background="@drawable/buttonbg"
+    android:layout_margin="30dp"
+    android:backgroundTint="@color/colorPrimary">
+
+
+    <ImageView
+        android:id="@+id/linearLayout"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_account_circle_black_24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/account_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout">
+
+        <TextView
+            android:id="@+id/header_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="User Name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/header_designation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Post"
+            android:padding="5dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/header_uniqueid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UniqueId"
+            android:padding="5dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="15dp"/>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

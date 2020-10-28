@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_margin="4dp"
+    android:backgroundTint="#FDECB9"
+    android:elevation="8dp"
+    app:cardElevation="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/card_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:hint="Staff ID"
+            android:maxLines="1"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/card_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:hint="Staff Name"
+            android:maxLines="2"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/card_position"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:hint="Designation"
+            android:maxLines="2"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textStyle="bold" />
+
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

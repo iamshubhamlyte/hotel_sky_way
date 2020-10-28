@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--Booked To free-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="15dp">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name of Customer"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/colorPrimaryDark"
+            app:boxStrokeColor="@color/colorPrimaryDark"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/customername"
+            android:inputType="textPersonName"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:hint="Room Number"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="10dp"
+                android:textColorHint="@color/colorPrimaryDark"
+                app:boxStrokeColor="@color/colorPrimaryDark"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/roomnumber"
+                    android:enabled="false"
+                    android:inputType="textPersonName"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Room Type"
+                android:layout_weight="0.5"
+                android:layout_marginTop="10dp"
+                android:textColorHint="@color/colorPrimaryDark"
+                app:boxStrokeColor="@color/colorPrimaryDark"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/roomtype"
+                    android:enabled="false"
+                    android:inputType="textPersonName"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date of Booking"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/colorPrimaryDark"
+            app:boxStrokeColor="@color/colorPrimaryDark"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:enabled="false"
+                android:layout_height="wrap_content"
+                android:id="@+id/bookingdate"
+                android:inputType="textPersonName"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date of Check In"
+            android:saveEnabled="false"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/colorPrimaryDark"
+            app:boxStrokeColor="@color/colorPrimaryDark"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/occupingdate"
+                android:enabled="false"
+                android:inputType="textPersonName"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date of Check Out"
+            android:saveEnabled="false"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/colorPrimaryDark"
+            app:boxStrokeColor="@color/colorPrimaryDark"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/leavingdate"
+                android:enabled="false"
+                android:inputType="textPersonName"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/buttonbg"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:padding="3dp"
+                    android:id="@+id/taskicon"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/booking"
+                    android:tag="Book It"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Book It"
+                    android:id="@+id/tasktext"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

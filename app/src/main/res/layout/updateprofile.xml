@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="15dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="Update Profile"
+            android:textSize="25dp"
+            android:background="@drawable/buttonbg"
+            android:backgroundTint="@color/colorPrimaryDark"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/colorPrimaryDark"
+            app:boxStrokeColor="@color/colorPrimaryDark"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/email"
+                android:enabled="false"
+                android:inputType="textPersonName"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Designation"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/colorPrimaryDark"
+        app:boxStrokeColor="@color/colorPrimaryDark"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/position"
+            android:enabled="false"
+            android:inputType="textPersonName"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="First Name"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/colorPrimaryDark"
+            app:boxStrokeColor="@color/colorPrimaryDark"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/firstName"
+                android:inputType="textPersonName"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last Name"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/colorPrimaryDark"
+            app:boxStrokeColor="@color/colorPrimaryDark"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lastName"
+                android:inputType="textPersonName"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mobile"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/colorPrimaryDark"
+            app:boxStrokeColor="@color/colorPrimaryDark"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Mobile"
+                android:inputType="phone"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Save"
+            android:textSize="25dp"
+            android:layout_margin="25dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/buttonbg"
+            android:backgroundTint="@color/colorPrimaryDark" />
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

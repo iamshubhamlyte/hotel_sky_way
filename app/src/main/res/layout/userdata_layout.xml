@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    app:cardElevation="8dp"
+    android:elevation="8dp"
+    android:background="@drawable/boundry">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_account_circle_black_24dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.1"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:layout_marginStart="5dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:textAppearance="?android:textAppearanceLarge"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:maxLines="2"
+                android:textStyle="bold"
+                android:textAppearance="?android:textAppearanceMedium"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Position"
+                android:layout_below="@+id/name"
+                android:maxLines="1"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="bold"
+                android:id="@+id/transaction"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DOJ"
+                android:layout_below="@+id/position"
+                android:maxLines="1"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.65"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:id="@+id/card_name"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:layout_below="@+id/name"
+                android:maxLines="2"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textStyle="bold"
+                android:id="@+id/card_email"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="position"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:id="@+id/card_position"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date of Joining"
+                android:layout_below="@+id/position"
+                android:maxLines="1"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="bold"
+                android:id="@+id/card_doj"
+                />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

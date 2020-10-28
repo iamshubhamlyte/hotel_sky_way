@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/addStaff_main"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context=".AddstaffFrag">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/buttonbg"
+                android:backgroundTint="@android:color/white"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_marginBottom="-20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="20dp">
+                    <LinearLayout
+                        android:id="@+id/linearLayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/boundry"
+                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Total Staff ->  "
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/totalstaff"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="4dp"
+                            android:text="0"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:textStyle="bold"
+                        android:text="No Data To Display\nClick On FAB Icon To Add Staff"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:id="@+id/hint"/>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/showdata"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/addStaff"
+            android:layout_width="277dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="@color/colorAccent"
+            android:elevation="8dp"
+            android:src="@drawable/ic_add_circle_outline_black_24dp"
+            app:fabSize="normal" />
+    </RelativeLayout>
+</RelativeLayout>

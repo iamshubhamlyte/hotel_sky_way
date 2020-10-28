@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context=".AssignTaskfrag">
+
+    <!-- TODO: Update blank fragment layout -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/buttonbg"
+            android:backgroundTint="@android:color/white"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_marginBottom="-20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginBottom="20dp">
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/boundry"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:text="Unique ID"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textStyle="bold"
+
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:text="Staff Name"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:text="Designation"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:text="Swipe Left or Right To Assign Task"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:textStyle="bold"
+                    android:text="No Staff is There\nGo to ( menu -> Add staff ) to add Staff"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:id="@+id/hint"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/showdata"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+</RelativeLayout>
